@@ -1,0 +1,83 @@
+.mainPage {
+  flex-grow: 1;
+  padding: 56px 0 80px;
+  @media screen and (max-width: 768px) {
+    padding: 80px 0 20px;
+    width: 100%;
+  }
+
+  &Block {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    align-items: flex-start;
+    border-bottom: 1px solid rgba(161, 161, 170, 0.5);
+    border-top: 1px solid rgba(161, 161, 170, 0.5);
+    @media screen and (max-width: 768px) {
+      display: block;
+    }
+  }
+
+  &__header {
+    font: 400 20px/120% 'Questrial';
+    color: #000000;
+    border-right: 1px solid rgba(161, 161, 170, 0.5);
+    @media screen and (max-width: 1280px) {
+      width: calc(100% - 320px);
+    }
+    @media screen and (max-width: 1024px) {
+      border-right: none;
+      width: 100%;
+    }
+
+    &Text {
+      display: block;
+      margin: 20px 0;
+      font: 400 22px/120% 'FreightText-BookItalic' ;
+      color: #000000;
+      padding-left: 86px;
+      font-style: italic;
+      @media screen and (max-width: 1270px) {
+        padding-left: 0;
+      }
+    }
+  }
+
+  hr {
+    margin: 0;
+    color: rgba(161, 161, 170, 0.5);
+    background-color: rgba(161, 161, 170, 0.5);
+    border:0 none;
+    height:1px;
+    clear:both;
+  }
+
+  &NotFound {
+    font: 400 40px/120% 'Questrial';
+  }
+
+  &Btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    @media screen and (max-width: 768px) {
+      button {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        padding: 10px 0;
+        text-align: center;
+        background: black;
+        color: #FFFFFF;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        &:hover {
+          background: black;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

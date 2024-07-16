@@ -1,0 +1,333 @@
+.card {
+  padding-top: 56px;
+  box-sizing: border-box;
+  flex: 1 0 auto;
+  @media screen and (max-width: 768px) {
+    padding-top: 78px;
+  }
+
+  &Blocks {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: flex-start;
+    border-top: 1px solid rgba(161, 161, 170, 0.5);
+  }
+
+  &Title {
+    font: 400 42px/120% 'Freight Display Pro';
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    color: #444444;
+    padding: 10px 0;
+  }
+
+  &BreadCrumbs {
+    display: flex;
+    font: 400 16px/120% 'Freight Display Pro';
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #444444;
+    text-decoration: none;
+    @media screen and (max-width: 1024px) {
+      flex-wrap: wrap;
+
+      span {
+        display: none;
+      }
+
+      a {
+        margin-right: 10px;
+        margin-bottom: 5px;
+      }
+    }
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+
+    a {
+      font: 400 16px/120% 'Freight Display Pro';
+      text-transform: uppercase;
+      color: #444444;
+      text-decoration: none;
+    }
+
+    span {
+      margin: 0 6px;
+    }
+  }
+
+  &HrTop {
+    margin: 0;
+    color: rgba(161, 161, 170, 0.5);
+    background-color: rgba(161, 161, 170, 0.5);
+    border:0 none;
+    height:1px;
+    clear:both;
+  }
+
+  &Date {
+    font: 400 12px/100% 'Arial';
+    color: #000000;
+    margin-bottom: 20px;
+  }
+
+  &Info {
+    width: 100%;
+    max-width: 760px;
+    padding-top: 20px;
+    margin-bottom: 50px;
+    @media screen and (max-width: 1170px) {
+      max-width: 690px;
+    }
+    @media screen and (max-width: 1100px) {
+      max-width: 614px;
+    }
+    @media screen and (max-width: 1024px) {
+      max-width: 100%;
+    }
+  }
+
+  &Img {
+    position: relative;
+    width: 100%;
+    height: 530px;
+    @media screen and (max-width: 768px) {
+      height: 240px;
+      margin-bottom: 20px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &Inner {
+      position: relative;
+      width: 48px!important;
+      height: 48px;
+      cursor: pointer;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  &HrBottom {
+    margin: 20px 0;
+    color: rgba(161, 161, 170, 0.5);
+    background-color: rgba(161, 161, 170, 0.5);
+    border:0 none;
+    height:1px;
+    clear:both;
+    @media screen and (max-width: 1024px) {
+      margin: 40px 0;
+    }
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  &Video {
+    padding: 20px 0 40px;
+  }
+
+  &Author {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      margin-top: 50px;
+    }
+
+    &Block {
+      display: flex;
+      align-items: flex-start;
+      @media screen and (max-width: 768px) {
+        margin-bottom: 20px;
+      }
+    }
+
+    &Img {
+      position: relative;
+      margin-right: 20px;
+      width: 48px;
+      height: 48px;
+      min-width: 48px;
+
+      img {
+        width: 100%!important;
+        height: 100%!important;
+        object-fit: cover;
+      }
+    }
+
+    &Name {
+      display: flex;
+      align-items: flex-start;
+      font: 400 15px/100%  'Freight Display Pro';
+      color: #A1A1AA;
+      margin-bottom: 7px;
+      font-style: italic;
+
+      span {
+        font: 400 14px/120% 'GillSans';
+        color: #000000;
+        margin-left: 10px;
+        text-transform: uppercase;
+      }
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+
+      &Mobile {
+        display: none;
+        @media screen and (max-width: 768px) {
+          display: flex;
+          align-items: flex-start;
+          font: 400 15px/100%  'Freight Display Pro';
+          color: #A1A1AA;
+          margin-bottom: 7px;
+          font-style: italic;
+
+          span {
+            font: 400 14px/120% 'GillSans';
+            color: #000000;
+            margin-left: 10px;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
+
+  &Subtitle {
+    font: 400 32px/120% 'GillSans';
+    color: #000000;
+    margin-bottom: 20px;
+    margin-top: 50px;
+  }
+
+  &Input {
+    display: block;
+    width: 100%;
+    font: 400 16px/120% 'GillSans';
+    border: 1px solid #000000;
+    outline: none;
+    padding: 10px 26px;
+    box-sizing: border-box;
+
+    &Comment {
+      min-height: 80px;
+      margin-top: 20px;
+      resize: none;
+    }
+  }
+
+  &Btn {
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    background: #000000;
+    padding: 10px 0;
+    font: 400 12px/140% 'GillSans';
+    color: #ffffff;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+
+  &Comment{
+    &Hr {
+      margin: 20px 0;
+    }
+
+    h4 {
+      font: 700 20px/120% 'GillSans';
+      margin-bottom: 6px;
+      word-break: break-all;
+    }
+
+    span {
+      display: block;
+      font: 400 12px/140% 'GillSans';
+      color: #A1A1AA;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font: 400 14px/140% 'Freight Text Pro';
+      word-break: break-all;
+    }
+  }
+
+  &HrFooter {
+    margin: 62px 0 40px 0;
+  }
+
+  &SliderWrapper {
+    width: 100%;
+    max-width: 760px;
+  }
+}
+
+.searchPage {
+  &Block {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    align-items: flex-start;
+    border-bottom: 1px solid rgba(161, 161, 170, 0.5);
+    border-top: 1px solid rgba(161, 161, 170, 0.5);
+    margin-top: 56px;
+    @media screen and (max-width: 1024px) {
+      margin-top: 28px;
+    }
+  }
+
+  &__header {
+    font: 400 20px/120% 'Questrial';
+    color: #000000;
+    border-right: 1px solid rgba(161, 161, 170, 0.5);
+    @media screen and (max-width: 1024px) {
+      border-right: none;
+    }
+
+    &Text {
+      display: block;
+      margin: 20px 0;
+      font: 400 22px/120% 'FreightText-BookItalic' ;
+      color: #000000;
+      padding-left: 86px;
+      font-style: italic;
+      @media screen and (max-width: 1270px) {
+        padding-left: 0;
+      }
+    }
+  }
+
+  hr {
+    margin: 0;
+    color: rgba(161, 161, 170, 0.5);
+    background-color: rgba(161, 161, 170, 0.5);
+    border:0 none;
+    height:1px;
+    clear:both;
+  }
+
+  &NotFound {
+    font: 400 40px/120% 'Questrial';
+  }
+
+  &Btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+}

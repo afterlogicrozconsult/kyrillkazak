@@ -1,0 +1,141 @@
+.hr {
+  margin: 0;
+  color: rgba(161, 161, 170, 0.5);
+  background-color: rgba(161, 161, 170, 0.5);
+  border:0 none;
+  height:1px;
+  clear:both;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px 0;
+  flex: 0 0 auto;
+
+  &__logo {
+    width: 100%;
+    max-width: 150px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+
+    &_text {
+      display: inline-block;
+      font: 400 32px/120% 'Questrial';
+      color: #000000;
+      max-width: 641px;
+      margin-bottom: 40px;
+      @media screen and (max-width: 500px) {
+        text-align: left;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  &__formBlock {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 60px;
+    @media screen and (max-width: 500px) {
+      width: 100%;
+      text-align: center;
+      justify-content: center;
+      margin-bottom: 14px;
+    }
+
+    input {
+      padding: 10px 26px 9.7px;
+      border: 1px solid #000000;
+      outline: none;
+      text-align: center;
+
+      @media screen and (max-width: 500px) {
+        padding: 10px 10px 9.7px;
+        width: calc(100% - 109px);
+      }
+    }
+
+    button {
+      font: 400 12px/140% 'Arial';
+      color: #FFFFFF;
+      padding: 10px 20px;
+      background: #000000;
+      margin-left: -1px;
+      @media screen and (max-width: 500px) {
+        min-width: 88px;
+        padding: 10px 18px;
+      }
+    }
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    @media screen and (max-width: 768px) {
+      justify-content: center;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 580px;
+    margin-right: 41px;
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+
+    a {
+      font: 400 14px/140% 'GillSans';
+      color: #000000;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+  }
+
+  &__icons a {
+    margin-right: 10px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &Info {
+    font: 400 18px/100% 'Freight Display Pro';
+    font-style: italic;
+    color: rgb(170, 170, 170);
+    margin-top: 20px;
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+
+    a {
+      font: 400 18px/100% 'Freight Display Pro';
+      font-style: italic;
+      color: rgb(170, 170, 170);
+      text-decoration: none;
+    }
+  }
+}

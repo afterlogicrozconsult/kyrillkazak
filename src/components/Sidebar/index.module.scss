@@ -1,0 +1,98 @@
+.sidebar {
+  position: sticky;
+  top: 0;
+  right: 0;
+  width: 320px;
+  padding: 15px 0 20px 20px;
+  background: no-repeat url("../../assets/images/shadow-side.png");
+  box-sizing: border-box;
+  min-width: 320px;
+
+  &Posts {
+    margin-bottom: 25px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
+
+  hr {
+    color: rgba(161, 161, 170, 0.5);
+    background-color: rgba(161, 161, 170, 0.5);
+    border:0 none;
+    height:1px;
+    clear:both;
+    margin: 0;
+  }
+
+  &Title {
+    font: 400 22px/140% 'FreightText-BookItalic';
+    font-style: italic;
+    color: #000000;
+    margin-bottom: 20px;
+  }
+
+  &Items {
+    display: flex;
+    align-items: flex-start;
+    cursor: pointer;
+    padding: 15px 0;
+  }
+
+  &Info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &Img {
+    position: relative;
+    width: 54px;
+    height: 54px;
+    margin-right: 12px;
+    min-width: 54px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &PostTitle {
+    display: inline-block;
+    font: 400 10px/120% 'GillSans';
+    color: #A1A1AA;
+    margin: 2px 0 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+  }
+
+  &Description {
+    font: 400 14px/110% 'Freight Display Pro';
+    color: #444444;
+  }
+}
+
+.footerSidebar {
+  label {
+    margin-bottom: 20px;
+    font: 400 28px/120% 'Freight Display Pro';
+    color: #000000;
+    text-align: center;
+  }
+
+  div {
+    margin-bottom: 0;
+
+    input {
+      padding: 10px 17px 9px;
+      width: calc(100% - 119px);
+    }
+
+    button {
+      padding: 10px 10px;
+      white-space: nowrap;
+    }
+  }
+}

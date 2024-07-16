@@ -1,0 +1,566 @@
+.post {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  text-decoration: none;
+  flex-direction: row-reverse;
+  @media screen and (max-width: 900px) {
+    flex-direction: column;
+  }
+
+  &Link {
+    cursor: pointer;
+    text-decoration: none;
+    color: #000000;
+    @media screen and (max-width: 768px) {
+      display: flex;
+      align-items: center;
+
+      &First {
+        display: block;
+      }
+    }
+
+    &Middle {
+      margin: 0 1px;
+    }
+  }
+
+  &Main {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  &Author {
+    position: relative;
+    width: 56px;
+    min-width: 56px;
+    height: 56px;
+    margin-right: 30px;
+    @media screen and (max-width: 1270px) {
+      display: none;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &Black {
+      background: #000000;
+    }
+  }
+
+  &ImagesBlock {
+    position: relative;
+    @media screen and (max-width: 900px) {
+      width: 100%;
+    }
+  }
+
+  &Img {
+    position: relative;
+    width: 219px;
+    height: 219px;
+    overflow: hidden;
+    margin-right: 41px;
+    @media screen and (max-width: 900px) {
+      width: 100%;
+      margin-right: 0;
+    }
+    @media screen and (max-width: 768px) {
+      width: 50%;
+      height: auto;
+      aspect-ratio: 1;
+
+      &First {
+        width: 100%;
+        aspect-ratio: 16/9;
+        margin-bottom: 20px;
+      }
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform .3s ease-out;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+      @media screen and (max-width: 900px) {
+        width: 100%;
+      }
+    }
+  }
+
+  &Title {
+    display: none;
+    @media screen and (max-width: 768px) {
+      display: block;
+      width: 50%;
+      padding: 0 25px;
+      box-sizing: border-box;
+      text-align: center;
+      font: 400 18px/120% "Freight Display Pro";
+
+      &First {
+        width: 100%;
+        font: 400 24px/120% "Freight Display Pro";
+      }
+    }
+  }
+
+  &Tag {
+    display: inline-block;
+    z-index: 9;
+    padding: 10px 0;
+    margin-bottom: 16px;
+    cursor: pointer;
+
+    a {
+      font: 400 14px/140%  'GillSans';
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #000000;
+    }
+  }
+
+  &Info {
+    width: 100%;
+    max-width: 587px;
+    @media screen and (max-width: 1024px) {
+      max-width: 100%;
+    }
+    @media screen and (max-width: 900px) {
+      margin-right: 0;
+      max-width: none;
+      padding-top: 0;
+    }
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  &Date {
+    font: 400 12px/140%  'Arial';
+    color: #000000;
+    margin-bottom: 15px;
+
+    @media screen and (max-width: 500px) {
+      font: 400 16px/140%  'Arial';
+      margin-bottom: 20px;
+    }
+  }
+
+  &Description {
+    font: 400 16px/140% 'Freight Display Pro';
+    color: #A1A1AA;
+    @media screen and (max-width: 1280px) {
+      margin-bottom: 40px;
+    }
+    @media screen and (max-width: 500px) {
+      font: 400 14px/140%  'Freight Display Pro';
+      margin-bottom: 20px;
+    }
+
+    span {
+      font: 600 14px/140% 'GillSans';
+      color: #000000;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+  }
+
+  &BtnMobile {
+    display: none;
+
+    //@media screen and (max-width: 500px) {
+    //  display: block;
+    //  width: 100%;
+    //  font: 400 14px/140% 'Arial';
+    //  color: #FFFFFF;
+    //  padding: 10px 0;
+    //  background: #000000;
+    //  margin-top: 20px;
+    //}
+  }
+
+  &Button {
+    font: 400 14px/100% 'Arial';
+    background: transparent;
+    border: 1px solid black;
+    padding: 8px;
+  }
+
+  &Left {
+    flex-direction: row-reverse;
+    align-items: start;
+    @media screen and (max-width: 900px) {
+      flex-direction: column;
+    }
+
+    &Img {
+      width: 300px;
+      height: 240px;
+      @media screen and (max-width: 1260px) {
+        width: 300px;
+        height: 240px;
+      }
+      @media screen and (max-width: 900px) {
+        width: 100%;
+        height: 360px;
+        margin-right: 0;
+      }
+
+      img {
+        @media screen and (max-width: 1260px) {
+          width: 300px;
+          height: 240px;
+        }
+        @media screen and (max-width: 900px) {
+          width: 100%;
+          height: 360px;
+        }
+      }
+    }
+
+    &Info {
+      max-width: calc(100% - 320px);
+      margin-left: 30px;
+      @media screen and (max-width: 1260px) {
+        margin-right: 0;
+      }
+      @media screen and (max-width: 900px) {
+        max-width: 100%;
+        margin-left: 0;
+      }
+    }
+
+    &Date {
+      margin-bottom: 15px;
+    }
+  }
+
+  &Type3 {
+    width: 100%;
+
+    &Block {
+      text-decoration: none;
+    }
+
+    &Img {
+      position: relative;
+      width: 100%;
+      height: 380px;
+
+      &Big {
+        height: 497px;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &Info {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      max-width: 80%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 9;
+
+      a {
+        font: 400 14px/140% 'GillSans';
+        color: #000000;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+    }
+
+    &Title {
+      display: inline-block;
+      font: 400 34px/120% 'Freight Display Pro';
+      color: rgb(51,51,51);
+      background: #ffffff;
+      margin: 20px 0 0 0;
+      box-sizing: border-box;
+    }
+
+    &Description {
+      font: 400 16px/140% 'Freight Display Pro';
+      color: #A1A1AA;
+      margin-top: 5px;
+
+      span {
+        font: 600 14px/140% 'GillSans';
+        color: #000000;
+        text-transform: uppercase;
+      }
+    }
+
+    &Tag {
+      display: inline-block;
+      padding: 5px 16px;
+      background: #ffffff;
+      cursor: pointer;
+      letter-spacing: 1.56px;
+      color: #000000;
+    }
+  }
+
+  &Type4 {
+    //padding: 20px 0;
+    width: 100%;
+
+    &Block {
+      display: flex;
+      align-items: center;
+    }
+
+    &Img {
+      position: relative;
+      width: 385px;
+      height: 385px;
+      margin-right: 4px;
+      @media screen and (max-width: 700px) {
+        width: 100%;
+        max-width: 100%;
+        margin-right: 0;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      &Additional {
+        position: relative;
+        width: 385px;
+        height: 385px;
+        @media screen and (max-width: 700px) {
+          display: none;
+        }
+
+        img {
+          width: 100%!important;
+          height: 100%!important;
+          object-fit: cover;
+        }
+      }
+    }
+
+    &Info {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 9;
+
+      a {
+        font: 400 14px/140% 'GillSans';
+        color: #000000;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+    }
+
+    &Tag {
+      display: inline-block;
+      padding: 5px 16px;
+      background: #ffffff;
+      cursor: pointer;
+      letter-spacing: 1.56px;
+      color: #000000;
+    }
+
+    &Title {
+      font: 400 22px/130% 'Questrial';
+      color: #000000;
+      padding: 20px 10px;
+      background: #ffffff;
+      max-width: 430px;
+    }
+  }
+
+  &Type5 {
+    //padding: 20px 0;
+    width: 100%;
+
+    &Block {
+      display: flex;
+      align-items: center;
+    }
+
+    &Img {
+      position: relative;
+      width: 385px;
+      height: 427px;
+      margin-right: 4px;
+      @media screen and (max-width: 700px) {
+        width: 100%;
+        max-width: 100%;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      &Additional {
+        position: relative;
+        width: 385px;
+        height: 427px;
+        @media screen and (max-width: 700px) {
+          display: none;
+        }
+
+        img {
+          width: 100%!important;
+          height: 100%!important;
+          object-fit: cover;
+        }
+      }
+    }
+
+    &Info {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 9;
+
+      a {
+        font: 400 14px/140% 'GillSans';
+        color: #000000;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+    }
+
+    &Tag {
+      display: inline-block;
+      padding: 5px 16px;
+      background: #ffffff;
+      cursor: pointer;
+      letter-spacing: 1.56px;
+      color: #000000;
+    }
+
+    &Title {
+      font: 400 24px/120% 'Freight Display Pro';
+      color: rgb(51,51,51);
+      padding: 20px 10px;
+      background: #ffffff;
+      max-width: 300px;
+      @media screen and (max-width: 360px) {
+        max-width: 280px;
+      }
+    }
+  }
+
+  &Type6 {
+    //padding: 20px 0;
+    width: 100%;
+
+    &Block {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &Img {
+      position: relative;
+      width: calc((100%/12)*4);
+      height: 226px;
+      max-width: 256px;
+      @media screen and (max-width: 700px) {
+        width: 100%;
+        max-width: 100%;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      &Additional {
+        position: relative;
+        height: 226px;
+        width: 256px;
+        @media screen and (max-width: 1200px) {
+          margin: 0 20px;
+        }
+        @media screen and (max-width: 700px) {
+          display: none;
+        }
+
+        span, img {
+          width: 100%!important;
+          height: 100%!important;
+          object-fit: cover!important;
+        }
+      }
+
+      &Third {
+        position: relative;
+        height: 226px;
+        width: 256px;
+        @media screen and (max-width: 700px) {
+          display: none;
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+
+    &Info {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 9;
+
+      a {
+        font: 400 14px/140% 'GillSans';
+        color: #000000;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+    }
+
+    &Tag {
+      display: inline-block;
+      padding: 5px 16px;
+      background: #ffffff;
+      cursor: pointer;
+      letter-spacing: 1.56px;
+      color: #000000;
+    }
+
+    &Title {
+      font: 400 22px/130% 'Questrial';
+      color: #000000;
+      padding: 20px 10px;
+      background: #ffffff;
+      max-width: 430px;
+    }
+  }
+}
+

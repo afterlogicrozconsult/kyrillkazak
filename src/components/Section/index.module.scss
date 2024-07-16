@@ -1,0 +1,20 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 1198px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 30px 0 50px;
+  @media screen and (max-width: 1260px) {
+    padding: 30px 40px 50px;
+  }
+  @media screen and (max-width: 900px) {
+    padding: 30px 20px 55px;
+    overflow-x: hidden;
+  }
+  @media screen and (max-width: 768px) {
+    padding: 0 20px 55px;
+  }
+}
+

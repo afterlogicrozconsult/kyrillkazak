@@ -1,0 +1,82 @@
+.slick-arrow {
+  z-index: 4;
+}
+
+.slick-arrow.slick-prev, .slick-arrow.slick-next {
+  width: 0;
+  top: 0;
+}
+
+.slick-prev:before, .slick-next:before {
+  display: none;
+}
+
+.slick-slider .slick-track {
+  display: flex;
+}
+
+.cardArrowLeft {
+  position: absolute;
+  top: 265px;
+  left: 20px;
+}
+
+.cardArrowRight {
+  position: absolute;
+  top: 265px;
+  Right: 20px;
+}
+
+.slider-inner {
+  margin-top: 20px;
+}
+
+.slider-inner .slick-track .slick-slide {
+  width: 48px!important;
+  margin-right: 10px;
+  opacity: 0.6;
+}
+
+.slider-inner .slick-track .slick-slide.slick-current {
+  opacity: 1;
+}
+
+.popularPosts .slick-slider .slick-arrow .popularArrowLeft, .popularPosts .slick-slider .slick-arrow .popularArrowRight {
+  display: none;
+}
+
+.popularPosts .slick-slider:hover {
+  .slick-arrow .popularArrowLeft, .popularArrowRight {
+    display: block;
+  }
+}
+
+.favouritesPosts .slick-slider .slick-arrow .favouritesArrowLeft, .popularPosts .slick-slider .slick-arrow .favouritesArrowRight {
+  display: none;
+}
+
+.favouritesPosts .slick-slider:hover {
+  .slick-arrow .favouritesArrowLeft, .favouritesArrowRight {
+    display: block;
+  }
+}
+
+.card .slick-slider .slick-arrow .cardArrowLeft, .card .slick-slider .slick-arrow .cardArrowRight {
+  display: none;
+}
+
+.card .slick-slider:hover {
+  .slick-arrow .cardArrowLeft, .slick-arrow .cardArrowRight {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .favouritesPosts .slick-slider {
+    margin: 0 -20px;
+  }
+
+  .favouritesPosts .slick-initialized .slick-slide {
+    padding: 0 20px;
+  }
+}
